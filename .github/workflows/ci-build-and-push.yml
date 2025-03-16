@@ -63,7 +63,7 @@ jobs:
         uses: docker/metadata-action@v3
         with:
           # Use different container name:
-          images: ukwa/webarchive-discovery-solr
+          images: min2ha/webarchive-discovery-solr
       - name: Log in to Docker Hub
         if: github.event_name != 'pull_request'
         uses: docker/login-action@v1
@@ -92,7 +92,7 @@ jobs:
         uses: docker/metadata-action@v3
         with:
           # Use different container name:
-          images: ukwa/webarchive-discovery-solr
+          images: min2ha/webarchive-discovery-solr
           flavor: |
             latest=auto
             prefix=
